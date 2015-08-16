@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<!-- Below is the heading for the web page -->
+	<title>Give us some feedback!</title> 
+	
+	<!-- This coding allows for JQuery -->
+	<meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="cssmenu/styles.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	
+	<!-- This code stretches the site to fit the screens device -->
+		<meta name="viewport" content="width=device-width">
+	<style>
+img {
+    max-width: 100%;
+}
+</style>
+</head> 
+<body>  
+	<div data-role="page">
+	<div data-role="header">
+	<h1> Leave us your feedback.</h1>
+	</div>
+	
+<!-- Below is the coding for a navigation menu that utilizes CSS and JQuery.It provides links to the other poages on the site. this menu is compressed so that it will fit on smaller screens (i.e mobile devices)-->
+<div id='cssmenu'>
+<ul>
+   <li><a href="index.html"><span>Home</span></a></li>
+   <li><a href='#'><span>Menu</span></a></li>
+   <li class='last'><a href='#'><span>About Us</span></a></li>
+      <li class='active has-sub'><a href='#'><span>More...</span></a>
+      <ul>
+         <li class='has-sub'><a href='#'><span>Feedback</span></a>
+            <ul>
+               <li><a href='#'><span>Leave us feedback</span></a></li>
+         </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Recipes</span></a>
+            <ul>
+               <li><a href='#'><span>See our recipes</span></a></li>
+          </ul>
+         </li>
+		    <li class='has-sub'><a href='#'><span>Developer</span></a>
+            <ul>
+               <li><a href='#'><span>About the developer</span></a></li>
+      </ul>
+   </li>
+</ul>
+</div>
+
+<!-- The code in the section below forms the heading of the page ' Leaving us feedback' -->
+	<div data-role="main" class="ui-content">
+	<h1>Leaving us feedback.</h1>
+	<p>This page allows our customers to provide us with feedback on our restauarnt and its services. </p>
+	</div>
+
+	<!-- The form created below allows for customers to leave feedback for the restauarant -->
+<label for="textinput-2">Name:</label>
+<input name="textinput-2" id="textinput-2" placeholder="Name" value="" type="text">
+	 
+<label for="textinput-2">Email Address:</label>
+<input name="textinput-2" id="textinput-2" placeholder="Email Address" value="" type="text">	 
+	
+<label for="textinput-2">Comments:</label>
+<input name="textinput-2" id="textinput-2" placeholder="Comments" value="" type="text">
+
+<!-- The JQuery Widget below is a slide bar, allowing customers to rate the restauarants feedback level out of 100 and submit it -->
+<label for="slider-fill-mini">Leave us your restaurant rating </label>
+<input name="slider-fill-mini" id="slider-fill-mini" value="40" min="0" max="100" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="b" type="range">
+
+<!-- This submit button sends the customers feedback to the database -->
+    <div class="button">
+        <button type="submit">Submit your feedback!</button>
+    </div>
+	
+
+</form>
+	 
+ <!-- Below is the footer of the html page which contains my name and student ID number. This footer will appear on all html pages across this ste -->
+	<div data-role="footer">
+		<h2>&copy; Ashley Wright ID No. 212378922 </h2>
+	</div>
+	
+
+	
+	</body>
+</html>

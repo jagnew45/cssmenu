@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<!-- Below is the heading for the web page -->
+	<title>Give us some feedback!</title> 
+	
+	<!-- This coding allows for JQuery -->
+	<meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="cssmenu/styles.css">
+	<script src="maps.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	
+	<!-- This code stretches the site to fit the screens device -->
+		<meta name="viewport" content="width=device-width">
+	<style>
+img {
+    max-width: 100%;
+}
+</style>
+</head> 
+<body>  
+<div data-role="page">
+<div data-role="header">
+<h1>Restaurant Menu</h1>
+</div>
+
+<!-- Below is the coding for a navigation menu that utilizes CSS and JQuery.It provides links to the other poages on the site. this menu is compressed so that it will fit on smaller screens (i.e mobile devices)-->
+<div id='cssmenu'>
+<ul>
+   <li><a href='#'><span>Home</span></a></li>
+   <li><a href='#'><span>Menu</span></a></li>
+   <li class='last'><a href='#'><span>About Us</span></a></li>
+      <li class='active has-sub'><a href='#'><span>More...</span></a>
+      <ul>
+         <li class='has-sub'><a href='#'><span>Feedback</span></a>
+            <ul>
+               <li><a href='#'><span>Leave us feedback</span></a></li>
+         </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Recipes</span></a>
+            <ul>
+               <li><a href='#'><span>See our recipes</span></a></li>
+          </ul>
+         </li>
+		    <li class='has-sub'><a href='#'><span>Developer</span></a>
+            <ul>
+               <li><a href='#'><span>About the developer</span></a></li>
+      </ul>
+   </li>
+</ul>
+</div>
+
+	<div data-role="main" class="ui-content">
+	<h1>This is the About Us page</h1>
+	<p>On this page you will find information about our restaurant, where we started and how we can be contacted. </p>
+	</div>
+
+	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    <div data-role="collapsible">
+        <h3>Where did we begin?</h3>
+    <p>Our restaurant began in 1995 when a chef named Louie moved from San fransisco in the US to melbourne, with the dream of creating the best Americana restaurant oin Australia.</p>
+    </div>
+    <div data-role="collapsible">
+        <h3>How long have we been operating? </h3>
+    <p>From our humble beginnings, we have been operating for 10 years.</p>
+    </div>
+    <div data-role="collapsible">
+        <h3>What is our passion?</h3>
+    <p>Our passion is to provide excellent quality food and beverages to the greater public.</p>
+    </div>
+	    <div data-role="collapsible">
+        <h3>How can we be contacted?</h3>
+    <p>We are open 6 nights a week, from 10am to 10pm and can be located at 132 Fake Street, Fakesville 5475..</p>
+    </div>
+</div>
+
+<!--- -->
+<div data-role="page" id="map-page" data-url="map-page">
+    <div data-role="header" data-theme="a">
+    <h1>Maps</h1>
+    </div>
+    <div role="main" class="ui-content" id="map-canvas">
+        <!-- map loads here... -->
+    </div>
+</div>
+	
+
+<!-- The html code below allows customers with android oor iphone devices to make calls by clicking or tapping on the link below. This is a Jquery widget. -->
+		<h3> If you have any further questions, feel free to contact us on the phone number below... </h3>
+		 <a href="tel:+1800229933">Call us now!</a>
+
+</div>	
+
+ 
+	 <!-- Below is the footer of the html page which contains my name and student ID number. This footer will appear on all html pages across this ste -->
+	<div data-role="footer">
+		<h2>&copy; Ashley Wright ID No. 212378922 </h2>
+	</div>
+		 	 
+	</div>
+	
+	
+	
+	</body>
+</html>

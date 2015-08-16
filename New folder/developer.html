@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<!-- Below is the heading for the web page -->
+	<title>About the developer</title> 
+	
+	<!-- This coding allows for JQuery -->
+	<meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="cssmenu/styles.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	
+	<!-- This code stretches the site to fit the screens device -->
+		<meta name="viewport" content="width=device-width">
+	<style>
+img {
+    max-width: 100%;
+}
+</style>
+</head> 
+<body>  
+<div data-role="page">
+<div data-role="header">
+<h1>About the developer</h1>
+</div>
+
+<!-- Below is the coding for a navigation menu that utilizes CSS and JQuery.It provides links to the other poages on the site. this menu is compressed so that it will fit on smaller screens (i.e mobile devices)-->
+<div id='cssmenu'>
+<ul>
+   <li><a href='#'><span>Home</span></a></li>
+   <li><a href='#'><span>Menu</span></a></li>
+   <li class='last'><a href='#'><span>About US</span></a></li>
+      <li class='active has-sub'><a href='#'><span>More...</span></a>
+      <ul>
+         <li class='has-sub'><a href='#'><span>Feedback</span></a>
+            <ul>
+               <li><a href='#'><span>Leave us feedback</span></a></li>
+         </ul>
+         </li>
+         <li class='has-sub'><a href='#'><span>Recipes</span></a>
+            <ul>
+               <li><a href='#'><span>See our recipes</span></a></li>
+          </ul>
+         </li>
+		    <li class='has-sub'><a href='#'><span>Developer</span></a>
+            <ul>
+               <li><a href='#'><span>About the developer</span></a></li>
+      </ul>
+   </li>
+</ul>
+</div>
+	<div data-role="main" class="ui-content">
+	<h2>This page contains information about the developer.</h2>
+	<p>The developer of this website is Ashley Wright, a student currently undertaking a bachelor of information technology at Deakin university in Burwood, Melbourne. </p>
+	</div>
+
+
+<!-- The html code below allows customers with android oor iphone devices to make calls by clicking or tapping on the link below. This is a Jquery widget. -->
+		<h3> If you have any further questions, feel free to contact the developer on the phone number below... </h3>
+		 <a href="tel:+1800229933">Call us now!</a>
+
+</div>	
+
+ 
+	 <!-- Below is the footer of the html page which contains my name and student ID number. This footer will appear on all html pages across this ste -->
+	<div data-role="footer">
+		<h2>&copy; Ashley Wright ID No. 212378922 </h2>
+	</div>
+		 	 
+	</div>
+	
+	
+	
+	</body>
+</html>
